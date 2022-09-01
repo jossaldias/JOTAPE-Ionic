@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Listar Productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <div *ngFor="let producto of listarProducto">
+    <ion-card (click)="verProducto(producto.nombre)">
+      <ion-card-content>
+        <h1>{{producto.nombre}}</h1>
+        <img src="{{producto.imagen}}" alt="">
+        <p>Precio</p>
+        <p>${{producto.precio}}</p>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+
+  <tr>
+    <th>
+      <ion-button (click)="goToHome()">Ir a Inicio</ion-button>
+    </th>
+    <th>
+      <ion-button [routerLink]="['/producto']">Ir a Productos</ion-button>
+    </th>
+  </tr>
+
+
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div>
+    <ion-card>
+      <ion-card-content>
+        <h1>{{nombre}}</h1>
+        <img src="{{nombre.imagen}}" alt="">
+        <p>Precio</p>
+        <p>${{precio}}</p>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+  <tr>
+    <th>
+      <ion-button (click)="goToHome()">Ir a Inicio</ion-button>
+    </th>
+    <th>
+      <ion-button (click)="goToProducts()">Listar Productos</ion-button>
+    </th>
+  </tr>
+</ion-content>
