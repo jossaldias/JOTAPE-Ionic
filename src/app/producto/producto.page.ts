@@ -13,21 +13,12 @@ export class ProductoPage implements OnInit {
   precio;
   imagen;
 
-
-  constructor(private activeRuta: ActivatedRoute) {
-
-
-
-  }
+  constructor(private activeRuta: ActivatedRoute) { }
 
   ngOnInit() {
-    
     this.nombre = this.activeRuta.snapshot.paramMap.get('nombre');
     this.precio = this.activeRuta.snapshot.paramMap.get('precio');
     this.imagen = this.activeRuta.snapshot.paramMap.get('imagen');
-
-
-
   }
 
 
