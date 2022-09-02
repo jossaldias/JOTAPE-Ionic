@@ -9,20 +9,22 @@ import { ActivatedRoute } from '@angular/router';
 export class ProductoPage implements OnInit {
 
 
-  nombre = "";
-  precio = "";
+  nombre;
+  precio;
 
 
   constructor(private activeRuta: ActivatedRoute) {
 
-    this.nombre = this.activeRuta.snapshot.paramMap.get('nombre');
-
-    console.log(this.activeRuta.snapshot)
 
 
   }
 
   ngOnInit() {
+    
+    this.nombre = this.activeRuta.snapshot.paramMap.get('nombre');
+    this.precio = this.activeRuta.snapshot.paramMap.get('precio');
+
+
 
   }
 
