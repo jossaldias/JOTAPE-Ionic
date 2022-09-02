@@ -39,8 +39,8 @@ export class ListarProductosPage implements OnInit {
     this.router.navigate(['folder/Home'])
   }
 
-  verProducto(nombre: String, precio: Number) {
-    let url = `producto/${nombre}/${precio}`;
+  verProducto(nombre: String, precio: Number, imagen:String) {
+    let url = `producto/${nombre}/${precio}/${imagen}`;
 
     this.router.navigate([url])
     console.log(url)
