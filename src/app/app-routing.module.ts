@@ -12,8 +12,8 @@ const routes: Routes = [
     loadChildren: () => import('./folder/folder.module').then(m => m.FolderPageModule)
   },
   {
-    path: 'listar-productos',
-    loadChildren: () => import('./listar-productos/listar-productos.module').then(m => m.ListarProductosPageModule)
+    path: 'consolas',
+    loadChildren: () => import('./consolas/consolas.module').then(m => m.ConsolasPageModule)
   },
   {
     path: 'producto/:nombre/:precio/:imagen',
