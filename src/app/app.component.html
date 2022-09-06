@@ -3,9 +3,10 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <img src="assets/files/jotapegames.png" alt="" style="width:90px;"><br>
-          <!-- <ion-list-header> Productos MAJOPA</ion-list-header><br> -->
-          <ion-note>Bienvenidos</ion-note>
+          <ion-item>
+            <ion-list-header>Bienvenidos</ion-list-header>
+          </ion-item>
+          <img src="assets/files/jotapegames.png" alt="" style="width:90px;">
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false"
               routerLinkActive="selected">

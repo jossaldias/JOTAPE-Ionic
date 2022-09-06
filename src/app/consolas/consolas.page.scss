@@ -6,6 +6,7 @@ pr {
     color: rgb(237, 23, 23);
 }
 
-ion-card-content:hover {
-    background-color: rgba(255, 128, 0, 0.303);
+ion-card:hover {
+    transform: translateY(-20px);
+    background-color: rgba(255, 128, 0, 0.353);
 }
