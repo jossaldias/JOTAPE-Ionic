@@ -19,6 +19,17 @@ const routes: Routes = [
     path: 'producto/:nombre/:precio/:imagen/:descripcion',
     loadChildren: () => import('./producto/producto.module').then(m => m.ProductoPageModule)
   },
+  {
+    path: 'juegos',
+    loadChildren: () => import('./juegos/juegos.module').then( m => m.JuegosPageModule)
+  },
+  {
+    path: 'producto-juegos/:nombreJ/:precioJ/:imagenJ/:descripcionJ',
+    loadChildren: () => import('./producto-juegos/producto-juegos.module').then( m => m.ProductoJuegosPageModule)
+  },
+
+
+
 
 ];
 

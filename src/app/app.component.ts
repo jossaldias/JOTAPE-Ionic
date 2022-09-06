@@ -8,7 +8,7 @@ export class AppComponent {
   public appPages = [
     { title: 'Home', url: '/folder/Home', icon: 'storefront' },
     { title: 'Consolas', url: '/consolas', icon: 'desktop' },
-    { title: 'Juegos', url: '/consolas', icon: 'game-controller' },
+    { title: 'Juegos', url: '/juegos', icon: 'game-controller' },
     { title: 'Accesorios', url: '/consolas', icon: 'watch' },
 
 
