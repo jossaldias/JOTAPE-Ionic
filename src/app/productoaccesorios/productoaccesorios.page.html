@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{nombreA}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div>
+    <ion-card>
+      <ion-card-content>
+        <h1></h1>
+        <img src="assets/files/{{imagena}}" alt="">
+        <p>Precio</p>
+        <p>${{precioJ}}</p>
+        <p class="ds">{{descripcionA}}</p>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+  <tr>
+    <th>
+      <ion-button [routerLink]="['/folder/Home']">Ir a Inicio</ion-button>
+    </th>
+    <th>
+      <ion-button [routerLink]="['/Accesorios']">Volver</ion-button>
+    </th>
+  </tr>
+</ion-content>

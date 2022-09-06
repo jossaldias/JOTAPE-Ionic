@@ -9,7 +9,7 @@ export class AppComponent {
     { title: 'Home', url: '/folder/Home', icon: 'storefront' },
     { title: 'Consolas', url: '/consolas', icon: 'desktop' },
     { title: 'Juegos', url: '/juegos', icon: 'game-controller' },
-    { title: 'Accesorios', url: '/consolas', icon: 'watch' },
+    { title: 'Accesorios', url: '/accesorios', icon: 'watch' },
 
 
   ];
