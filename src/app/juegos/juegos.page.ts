@@ -8,12 +8,12 @@ import { Router } from '@angular/router';
 })
 export class JuegosPage implements OnInit {
 
-  public listarJuegos=[
+  public listarJuegos = [
     {
-      "nombreJ":"Pokemon",
-      "precioJ":1,
-      "imagenJ":"play5.png",
-      "descripcionJ":"Juego para niñas"
+      "nombreJ": "Pokemon",
+      "precioJ": 1,
+      "imagenJ": "play5.png",
+      "descripcionJ": "Juego para niñas"
     }
   ]
 
@@ -22,10 +22,10 @@ export class JuegosPage implements OnInit {
 
   ngOnInit() {
   }
-verJuegos(nombreJ:String,precioJ:Number,imagenJ:String,descripcionJ:String){
-  let url = `juegos/${nombreJ}/${precioJ}/${imagenJ}/${descripcionJ}`;
+  verJuegos(nombreJ: String, precioJ: Number, imagenJ: String, descripcionJ: String) {
+    let url = `producto-juegos/${nombreJ}/${precioJ}/${imagenJ}/${descripcionJ}`;
 
-  this.router.navigate([url])
+    this.router.navigate([url])
     console.log(url)
-}
+  }
 }
