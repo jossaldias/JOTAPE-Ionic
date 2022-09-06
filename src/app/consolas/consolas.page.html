@@ -9,7 +9,7 @@
 <ion-content>
 
   <div *ngFor="let producto of listarProducto">
-    <ion-card (click)="verProducto(producto.nombre, producto.precio, producto.imagen)">
+    <ion-card (click)="verProducto(producto.nombre, producto.precio, producto.imagen, producto.descripcion)">
       <ion-card-content><br>
         <h1><strong>{{producto.nombre}}</strong></h1>
         <img src="assets/files/{{producto.imagen}}" alt="">
