@@ -19,17 +19,15 @@
         </h2>
       </ion-card-content>
     </ion-card>
-
   </div>
-
-  <tr>
-    <th>
-      <ion-button (click)="goToHome()">Ir a Inicio</ion-button>
-    </th>
-    <th>
-      <!-- <ion-button [routerLink]="['/producto']">Ir a Productos</ion-button> -->
-    </th>
-  </tr>
-
-
+  <ion-button expand="block" (click)="goToHome()">Ir a Inicio</ion-button>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-text color="primary">
+        <b>MAJOPA GAMES Ⓒ </b>
+        <p>Desarrollado por Gamers para Gamers</p>
+        <p>Calle Siempre Viva 123, Springfield</p>
+      </ion-text>
+    </ion-toolbar>
+  </ion-footer>
 </ion-content>

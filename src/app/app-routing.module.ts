@@ -21,19 +21,19 @@ const routes: Routes = [
   },
   {
     path: 'juegos',
-    loadChildren: () => import('./juegos/juegos.module').then( m => m.JuegosPageModule)
+    loadChildren: () => import('./juegos/juegos.module').then(m => m.JuegosPageModule)
   },
   {
     path: 'producto-juegos/:nombreJ/:precioJ/:imagenJ/:descripcionJ',
-    loadChildren: () => import('./producto-juegos/producto-juegos.module').then( m => m.ProductoJuegosPageModule)
+    loadChildren: () => import('./producto-juegos/producto-juegos.module').then(m => m.ProductoJuegosPageModule)
   },
   {
     path: 'accesorios',
-    loadChildren: () => import('./accesorios/accesorios.module').then( m => m.AccesoriosPageModule)
+    loadChildren: () => import('./accesorios/accesorios.module').then(m => m.AccesoriosPageModule)
   },
   {
     path: 'productoaccesorios/:nombreA/:precioA/:imagenA/:descripcionA',
-    loadChildren: () => import('./productoaccesorios/productoaccesorios.module').then( m => m.ProductoaccesoriosPageModule)
+    loadChildren: () => import('./productoaccesorios/productoaccesorios.module').then(m => m.ProductoaccesoriosPageModule)
   },
 
 

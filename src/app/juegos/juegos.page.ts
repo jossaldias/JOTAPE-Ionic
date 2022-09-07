@@ -44,6 +44,10 @@ export class JuegosPage implements OnInit {
 
   constructor(private router: Router) { }
 
+  goToHome() {
+    this.router.navigate(['folder/Home'])
+  }
+
 
   ngOnInit() {
   }
