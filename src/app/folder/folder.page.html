@@ -9,11 +9,11 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
+      <strong class="capitalize">Bienvenido </strong><br>
+      <strong class="capitalize">{{ folder }}</strong>
     </ion-toolbar>
   </ion-header>
   <div id="container">
-    <strong class="capitalize">Bienvenido</strong>
     <p style="color: black ;">¡Somos una empres dedicada a la venta de accesorios y videojuegos!.</p>
     <ion-img src="/assets/files/jotapegames.png" style="width: 100px;"></ion-img>
     <ion-card>
@@ -27,14 +27,14 @@
         <ion-input placeholder="" type="password"></ion-input>
       </ion-item>
       <br>
-      <ion-button expand="block">Ingresar</ion-button>
+      <ion-button expand="block" [routerLink]="['/folder/Patricio']">Ingresar</ion-button>
     </ion-card>
   </div>
 </ion-content>
 <ion-footer>
   <ion-toolbar>
     <ion-text color="primary">
-      <b>MAJOPA GAMES Ⓒ </b>
+      <b>JOTAPE GAMES Ⓒ </b>
       <p>Desarrollado por Gamers para Gamers</p>
       <p>Calle Siempre Viva 123, Springfield</p>
     </ion-text>

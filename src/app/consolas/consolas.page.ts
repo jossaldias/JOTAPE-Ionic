@@ -14,7 +14,7 @@ export class ConsolasPage implements OnInit {
       "nombre": "Playstation 5",
       "precio": 679000,
       "imagen": "play5.png",
-      "descripcion": "La consola PS5¿ hace posibles nuevas formas de juego que jamás habías imaginado.Experimenta una velocidad sorprendente con una SSD de velocidad ultrarrápida, una inmersión más profunda con soporte para respuesta háptica, gatillos adaptativos y audio 3D, además de una generación completamente nueva de juegos de PlayStation®."
+      "descripcion": "La consola PS5 hace posibles nuevas formas de juego que jamás habías imaginado.Experimenta una velocidad sorprendente con una SSD de velocidad ultrarrápida, una inmersión más profunda con soporte para respuesta háptica, gatillos adaptativos y audio 3D, además de una generación completamente nueva de juegos de PlayStation®."
     },
     {
       "nombre": "XBox One",
