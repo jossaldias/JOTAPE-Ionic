@@ -7,13 +7,23 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./folder.page.scss'],
 })
 export class FolderPage implements OnInit {
-  public folder: string;
+  public username: string;
+  public password: string;
+  public loggedIn: boolean = false; 
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  constructor(private activatedRoute: ActivatedRoute) {}
 
-
-  ngOnInit() {
-    this.folder = this.activatedRoute.snapshot.paramMap.get('id');
+  login() {
+    
+    if (this.username === 'José' && this.password === 'admin') {
+    this.loggedIn = true;
+    console.log('Inicio de sesión exitoso');
+    } else {
+      
+      console.log('Error de inicio de sesión');
+    }
   }
 
+  ngOnInit() {
+  }
 }

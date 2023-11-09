@@ -10,24 +10,31 @@
   <ion-header collapse="condense">
     <ion-toolbar>
       <strong class="capitalize">Bienvenido </strong><br>
-      <strong class="capitalize">{{ folder }}</strong>
+      <strong class="capitalize" *ngIf="loggedIn">{{ username }}</strong>
     </ion-toolbar>
   </ion-header>
   <div id="container">
-    <p style="color: black ;">¡Somos una empres dedicada a la venta de accesorios y videojuegos!.</p>
+    <ion-item>
+      <p style="color: black ;">¡Somos una empres dedicada a la venta de accesorios y videojuegos!.</p>
+    </ion-item>
     <ion-img src="/assets/files/jotapegames.png" style="width: 100px;"></ion-img>
     <ion-card>
-      <h5>Ingrese a su Cuenta</h5>
-      <ion-item>
-        <ion-label>Usuario</ion-label>
-        <ion-input placeholder="" type="text"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>Contraseña</ion-label>
-        <ion-input placeholder="" type="password"></ion-input>
-      </ion-item>
-      <br>
-      <ion-button expand="block" [routerLink]="['/folder/Patricio']">Ingresar</ion-button>
+      <ion-card-header>
+        Ingrese a su cuenta
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input [(ngModel)]="username" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input [(ngModel)]="password" type="password"></ion-input>
+        </ion-item>
+      </ion-card-content>
+      <ion-card-footer>
+        <ion-button expand="full" (click)="login()">Ingresar</ion-button>
+      </ion-card-footer>
     </ion-card>
   </div>
 </ion-content>
